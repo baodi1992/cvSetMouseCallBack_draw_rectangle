@@ -82,7 +82,7 @@ void onMouse(int Event, int x, int y, int flags, void* param)
 		prey = y;
 
 		fprintf(coordinatesdata, "%d\n%d\n", x, y);
-		fprintf(stdout, "%d\n%d\n", prex, prey);//调试使用
+		fprintf(stdout, "%d\n%d\n", prex, prey);//碌梅脢脭脢鹿脫脙
 	}
 
 
@@ -109,7 +109,8 @@ void onMouse(int Event, int x, int y, int flags, void* param)
 		curx = x;
 		cury = y;
 		fprintf(coordinatesdata, "%d\n%d\n", x - prex, y - prey);
-		fprintf(stdout, "%d\n%d\n", x - prex, y - prey);//调试使用
+		fflush(coordinatesdata);
+		fprintf(stdout, "%d\n%d\n", x - prex, y - prey);//碌梅脢脭脢鹿脫脙
 	}
 		//printf("The Event is : %d ", Event);
 	//printf("The flags is : %d ", flags);
